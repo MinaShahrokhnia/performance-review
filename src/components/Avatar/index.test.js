@@ -11,13 +11,13 @@ it('should accept avatar image called src as prop', () => {
     const props = {
         src: 'path/to/image'
     }
-    const avatar = shallow(<Avatar {...props} />);
+    const avatar = shallow(<Avatar {...props} />);                  
     const avatarInstance = avatar.instance();
 
     expect(avatarInstance.props.src).toEqual(props.src);
 });
 
-it ('initialize src with empty url', () => {
+it ('should  view avatar image', () => {
     const props = {
         src: 'path/to/image'
     }

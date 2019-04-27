@@ -7,3 +7,7 @@ const app = shallow(<App/>);
 it('renders `app` component', () => {
     expect(app).toMatchSnapshot();
 })
+
+it('should view avatar component', () => {
+    expect(app.find('Avatar')).toHaveLength(1);
+})
